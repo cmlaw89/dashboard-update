@@ -5,6 +5,11 @@ var db = 'quality';
 
 var dbUrl = 'jdbc:google:mysql://' + connectionName + '/' + db;
 
+function updateAll() {
+  addProofreading()
+  addQuality()
+}
+
 function findUserId() {
   //Returns the employee_id associated with the current spreadsheet's id
   var id = SpreadsheetApp.getActiveSpreadsheet().getId()
